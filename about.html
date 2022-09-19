@@ -1,0 +1,424 @@
+<html>
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PORTFOLIO_DEEPANSHU</title>
+        <style>
+            html,body{
+                height: 100%;
+            }
+            body{
+                margin: 0px;
+                padding :0px;
+                font-family:Helvetica, sans-serif;
+                font-size: 12pt;
+            }
+            header{
+                overflow: hidden;
+                height:50px;
+                background-color: rgba(0, 0, 255, 0.737);
+                color:white; 
+            }
+            #top_header{
+                height:50px;
+                background-color: rgba(0, 0, 0, 0.882);
+            }
+            #name{
+                float:left;
+                margin-left:5px;
+                padding-left:5px;
+            }
+            nav{
+                float:right;
+                margin:10px;
+                padding:10px;
+            }
+            nav a{
+                padding:10px;
+                text-decoration:none;
+                color: white;
+            }
+            hr{
+                padding: 0px;
+                display: inline;
+            }
+            #logo{
+                height:450px;
+                margin:0px;
+                background-color: #9A86A4
+            }
+            #portfolio{
+                float:left;
+                display: block;
+                text-align: left;
+                line-height: 30px;
+                background-color: #9A86A4
+            }
+            
+            .cv button{
+                height: 50px;
+                width: 200px;
+                border: 4px solid black;
+                border-radius: 5px;
+                font-size: 20px;
+                background-color: #e91e62ad;
+            }
+            .cv a, .project a{
+                text-decoration: none;
+                color: #ddd;
+            }
+
+            #image{
+                display: inline-block;
+                margin-left: 530px;
+                margin-top: 40px;
+                /* border: 1px solid red; */
+            }
+            .information{
+                display: inline-block;
+                vertical-align: top;
+                margin-top: 50px;
+                margin-left: 50px;
+            }
+            #image img{
+                height:350px;
+                width:300px;
+                padding:10px 20px;
+                border-radius:50px;
+            }
+            main{
+                height:3700px;
+                display: inline-block;
+                /* border:1px solid black; */
+            }
+            #about
+            {
+                height:max-content;
+                line-height: 35px;
+                background-color: #B1BCE6;
+                padding:10px 20px;
+                font-size: 16pt;
+                /* border: 1px solid red; */
+            }
+            #skills{
+                height:max-content;
+                background-color: #B1BCE6;
+                border: 2px solid #B1BCE6;
+                padding-bottom: 20px;
+            }
+            .skills {
+                text-align: right; 
+                padding-top: 10px; 
+                padding-bottom: 10px;
+                font-weight: 800;
+                color: black; /* White text color */
+            }
+
+            .html {width: 40%; background-color: #04AA6D;} 
+            .css {width: 40%; background-color:rgba(255, 255, 0, 0.575);} 
+            .C {width: 50%; background-color: #f44336;} 
+            
+
+            #skills p{ 
+                padding-top: 10px; 
+                padding-bottom: 10px;
+                font-weight: bolder;
+                margin-left:25%;
+                color: black; 
+            }
+            .container{
+                width:50%;
+                background-color: #ddd;
+                margin-left: 25%; 
+                border: 4px solid black;
+            }
+            #skills h1, #certificates h1, #marksheet h1{
+                text-align: center;
+            }
+            #certificates{
+                height:max-content;
+                background-color: #B7E5DD;
+                border: 2px solid #B7E5DD;
+            }
+            #certi_images{
+                height:90%;
+                /* border: 1px solid red; */
+            }
+            #certi_images1, #certi_images2{
+                height:50%;
+                /* border: 1px solid green; */
+                display: flex;
+                justify-content: space-around;
+            } 
+            #certi_images1 div, #certi_images2 div{
+                margin:20px;
+                height:300px;
+                width:400px;
+                border: 2px  red dotted;
+            }
+            #certi_images img{ 
+                height:300px;
+                width:400px;
+            }
+            
+            #marksheet
+            {
+                height:max-content;
+                background-color: #B7E5DD;
+                border: 2px solid #B7E5DD;
+            }
+            #mark_images
+            {
+                height:max-content;
+                display: flex;
+                justify-content: space-around;
+            }
+            
+            #mark_images div{
+                margin-top:45px;
+                height:300px;
+                width:500px;
+                border: 2px  red dotted;
+            }
+            #mark_images img{
+                height:300px;
+                width:500px;
+            }
+            #gallery{
+                height: max-content;
+                background-color:#F1F0C0 ;
+                border: 2px solid #F1F0C0;
+            }
+            video{
+                height: 500px;
+                border-radius: 10px;
+            }
+            #gallery h1{
+                text-align: center;
+            }
+            #gallery_img div{
+                width: 33%;
+                display: inline-flex;
+            }
+            #gallery_img img{
+                height: 500px;
+                display: flex;
+                justify-content: space-around;
+                float: none;
+                border-radius: 10px;
+            }
+            .imgdiv{
+                justify-content: center;
+                padding: 15px 0px;
+            }
+            footer{
+                margin:0px;
+                height:300px;
+                text-align: center;
+                border:2px solid black;
+                background-color: rgb(43, 144, 144);
+            }
+            footer a{
+                display: block;
+            }
+            .contact{
+                border:1px solid;
+                margin-top: 150px;
+                background-color: #2195f37a;
+                padding-top:20px;
+                text-align: center;
+            }
+            .contact h3{
+                padding-top:20px;
+            }
+            @media screen and (max-width:1000px) {
+                #image{
+                    margin-left: 80px;
+                }
+                #certi_images1 div, #certi_images2 div{
+                    height: 200px;
+                    width: 250px;
+                }
+                #certi_images img{
+                    height: 200px;
+                    width: 250px;
+                }
+                #mark_images div{
+                    height: 250px;
+                    width: 300px;
+                }
+                #mark_images img{
+                    height: 250px;
+                    width: 300px;
+                }
+                #gallery_img div{
+                    width: 32%;
+                }
+                #gallery_img img{
+                    height: 300px;
+                }
+                video{
+                    height: 300px;
+                }
+            }
+            @media screen and (max-width:500px) {
+                .information{
+                    margin-left: 90px;
+                }
+                #image{
+                    margin-left: 70px;
+                }
+                #certi_images1, #certi_images2{
+                    display: block;
+                }
+                #certi_images1 div, #certi_images2 div{
+                    margin: auto;
+                    height: 280px;
+                    width: 350px;
+                }
+                #certi_images img{
+                    height: 280px;
+                    width: 350px;
+                }
+                #mark_images{
+                    display: block;
+                }
+                #mark_images div{
+                    margin: auto;
+                    height: 350px;
+                    width: 400px;
+                }
+                #mark_images img{
+                    height: 350px;
+                    width: 400px;
+                }
+                #gallery_img div{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                }
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <!-- header and nav section -->
+        <header>
+            <div id="top_header">
+                <div id="name">
+                    <p>DEEPANSHU GOYAL</p>
+                </div>
+                <nav>
+                    <div id="nav_bar">
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#certificates">Certificates</a>
+                        <a href="#marksheet">Marksheet</a>
+                        <a href="#gallery">Gallery</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+            <div id="logo">
+                <div id="portfolio">
+                    <div class="information">
+                        <h1 style="font-size: 80px;">Portfolio</h1>
+                        <h2 style="font-size: 30px;">Deepanshu Goyal</h2>
+                        <h3 style="font-size: 20px;">Under graduate student</h3>
+                        <div class="cv">
+                            <object data="" style="height:100%; width:100%;">
+                                <a href="https://drive.google.com/file/d/1xg-TXcnvOValXX1GdiqzwdPs9jzb9K1Z/view?usp=drivesdk">
+                                    <button>CV</button>
+                                </a>
+                            </object>
+                        </div>
+                    </div>
+                    <div id="image">
+                        <img src="image/deepanshu.jpeg" alt="Deepanshu Goyal">
+                    </div>
+                </div>
+            </div>
+        <!-- main section -->
+        <!-- <main> -->
+            <!-- about -->
+            <div id="about">
+                <p>Hi! My name is Deepanshu Goyal.</p>
+                <p>I'm a 1st year under graduate currently pursuing B.tech in CSE from Dronacharya college of
+                    Engineering, Gurgaon. I'm thrilled with confidence. Working with sincerity and perfectionism 
+                    are my qualities. I'm working on competitive coding to grab more knowledge in the field of
+                    advancements.
+                </p>
+            </div>
+            <!-- skills -->
+            <div id="skills">
+                <h1>Skills</h1>
+                <p>C</p>
+                <div class="container">
+                <div class="skills C">40%</div>
+                </div>
+
+                <p>HTML</p>
+                <div class="container">
+                <div class="skills html">30%</div>
+                </div>
+
+                <p>CSS</p>
+                <div class="container">
+                <div class="skills css">30%</div>
+                </div>
+            </div>
+            <!-- certficates -->
+            <div id="certificates">
+                <h1>Certificates</h1>
+                <div id="certi_images">
+                    <div id="certi_images1">
+                        <div><img src="image/c1.jpeg" alt="certificate"></div>
+                        <div><img src="image/c2.jpeg" alt="certificate"></div>
+                        <div><img src="image/hackerrank.jpeg" alt="certificate"></div>
+                    </div>
+                    
+                    <div id="certi_images2">
+                        <div><img src="image/infosys.jpeg" alt="certificate"></div>
+                        <div><img src="image/ncat.jpeg" alt="certificate"></div>
+                        <div><img src="image/poster.jpeg" alt="certificate"></div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- marksheet -->
+            <div id="marksheet">
+                <h1>Marksheet</h1>
+                <div id="mark_images">
+                    <div><img src="image/10marksheet.jpeg" alt="marksheet"></div>
+                    <div><img src="image/12marksheet.jpeg" alt="marksheet"></div>
+                </div>
+            </div>
+            <!-- gallery -->
+            <div id="gallery">
+                <h1>Gallery</h1>
+                <div id="gallery_img">
+                    <div class="imgdiv"><img src="image/pic 1.jpeg"></div>
+                    <div class="imgdiv"><img src="image/pic 14.jpeg"></div>
+                    <div class="imgdiv"><img src="image/pic 3.jpeg"></div>
+                    <div class="imgdiv"><img src="image/pic 15.jpeg"></div>
+                    <div class="imgdiv"><video controls> <source src="image/video.mp4" type="video/mp4"></video></div>
+                    <div class="imgdiv"><img src="image/pic 16.jpeg"></div>
+                    <div class="imgdiv"><img src="image/pic 7.jpeg"></div>
+                    <div class="imgdiv"><img src="image/pic 10.jpeg"></div>
+                    <div class="imgdiv"><img src="image/pic 12.jpeg"></div>
+                </div>
+            </div>
+        <!-- </main> -->
+        <!-- footer -->
+        <footer>
+            <h2>CONTACT DETAILS</h2>
+            <h3>Contact Number</h3>
+            <p>8295575411</p>
+            <h3>Email</h3>
+            <p>deepanshugoyal123.com@gmail.com</p>
+            <a href="https://www.linkedin.com/in/deepanshu-goyal-6b6210235">Linkedin URL</a>
+            <a href="https://instagram.com/deepgoyal_703?igshid=YmMyMTA2M2Y=">Instagram</a>
+        </footer>
+    </body>
+</html>
